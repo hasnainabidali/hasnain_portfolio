@@ -69,8 +69,8 @@ html {
 
 body {
   font-family: 'Aeonik';
-  background: #f5f4f5;
-  color: #282829;
+  background: #120e16;
+  color: #f5f4f5;
   font-style: normal;
   font-weight: 400;
   max-width: 100vw;
@@ -82,7 +82,7 @@ body.hide_header .header {
 }
 
 body.scrolled .header {
-  background: #f5f4f5;
+  background: #120e16;
 }
 
 @media (min-width: 1024px) {

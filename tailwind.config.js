@@ -2,6 +2,9 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       animation: {
         loopL: 'loopTextLeft  4s linear infinite',
@@ -24,7 +27,7 @@ module.exports = {
         purple: '#8566f6',
         turks: '#a6e2e3',
         red: '#e46060',
-        black: '#282829',
+        black: '#120e16',
         white: '#f5f4f5',
       },
     },

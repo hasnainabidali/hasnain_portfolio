@@ -23,19 +23,21 @@ export const Header = () => {
   const onLogoLeave = () => {
     const logoSvg = logoRef.current.firstChild.firstChild;
     gsap.to(logoSvg, {
-      fill: '#282829',
+      fill: '#f5f4f5',
       duration: 0.2,
       ease: 'power1.out',
     });
   };
 
   return (
-    <div className="header  min-w-screen fixed left-0 top-0 z-10 w-screen px-7 transition-all duration-500 ease-out">
+    <div className="header min-w-screen fixed left-0 top-0 z-10 w-screen px-4 lg:px-7 transition-all duration-500 ease-out">
       <div className="overflow-hidden bg-none">
-        <div className="header_container  flex items-center justify-between transition-all duration-500 ease-out will-change-transform lg:py-8">
-          <MenuButton>Menu</MenuButton>
+        <div className="header_container relative flex items-center justify-center transition-all duration-500 ease-out will-change-transform py-4 lg:py-8">
+          <div className="absolute left-0">
+            <MenuButton>Menu</MenuButton>
+          </div>
           <div
-            className="header_logo  pointer-event-auto cursor-pointer leading-none transition-height [&>svg]:h-10 [&>svg]:duration-500 [&>svg]:ease-out lg:[&>svg]:h-16 "
+            className="header_logo  pointer-event-auto cursor-pointer leading-none transition-height [&>svg]:h-8 [&>svg]:duration-500 [&>svg]:ease-out md:[&>svg]:h-12 lg:[&>svg]:h-16"
             data-color="#a6e2e3"
             ref={logoRef}
             onMouseEnter={onLogoEnter}
@@ -43,7 +45,9 @@ export const Header = () => {
           >
             <MainLogo />
           </div>
-          <MenuButton>Contact</MenuButton>
+          <div className="absolute right-0">
+            <MenuButton>Contact</MenuButton>
+          </div>
         </div>
       </div>
     </div>

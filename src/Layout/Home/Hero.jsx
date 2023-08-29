@@ -113,7 +113,7 @@ export const HomeHero = () => {
           </span>
           <div
             ref={heroInfiniteRef}
-            className="font_aeonik absolute bottom-[-25vw] left-[35%] ml-10 -mr-10 h-8  w-40 overflow-hidden rounded-full border border-black text-xs font-normal uppercase  opacity-0  lg:relative lg:left-8 lg:bottom-3 lg:right-[1vw] lg:h-14 lg:w-[16vw] lg:text-xl  lg:leading-10 "
+            className="font_aeonik absolute bottom-[-38.2vw] left-[30%] md:bottom-[-25vw] md:left-[35%] ml-10 -mr-10 h-8  w-40 overflow-hidden rounded-full border border-white text-xs font-normal uppercase  opacity-0  lg:relative lg:left-8 lg:bottom-3 lg:right-[1vw] lg:h-14 lg:w-[16vw] lg:text-xl  lg:leading-10 "
           >
             <div className="group flex h-full cursor-pointer items-center whitespace-nowrap">
               <span className=" group-hover:pause animate-loopL">
