@@ -5,6 +5,9 @@ module.exports = {
     container: {
       center: true,
     },
+    fontFamily: {
+      'jetbrains': ['JetBrains Mono', 'monospace']
+    },
     extend: {
       animation: {
         loopL: 'loopTextLeft  4s linear infinite',
@@ -19,11 +22,12 @@ module.exports = {
         height: 'height',
       },
       colors: {
+        primary: '#fdd600',
         orange: '#ed7c50',
         darkOrange: '#d96d43',
         darkGrey: '#595959',
         lightGrey: '#8a8a8a',
-        green: '#43ae61',
+        green: '#59c378',
         purple: '#8566f6',
         turks: '#a6e2e3',
         red: '#e46060',

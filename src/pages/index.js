@@ -14,7 +14,6 @@ export default function Home() {
     
     const sectionColor = document.querySelectorAll('.color-section[data-bgcolor]');
     sectionColor.forEach((colorSection, i) => {
-      console.log(colorSection)
       
       const prevBgColor = i === 0 ? '' : sectionColor[i - 1].dataset.bgcolor;
       const prevTextColor = i === 0 ? '' : sectionColor[i - 1].dataset.textcolor;
