@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import { Header } from '@/components';
-import { HomeHero, HomeHorizontalSection } from '@/Layout';
+import { HomeHero, TextAppear, HomeHorizontalSection } from '@/Layout';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import gsap from 'gsap';
 
@@ -83,6 +83,13 @@ export default function Home() {
             data-textcolor="#f5f4f5"
           >
             <HomeHero />
+          </section>
+          <section
+            className="color-section"
+            data-bgcolor="#120e16"
+            data-textcolor="#f5f4f5"
+          >
+            <TextAppear />
           </section>
           
           <section
