@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import gsap from 'gsap';
 
-
-// gsap.registerPlugin(ScrollTrigger);
-
 export const TextAppear = () => {
+  
+  const targetSection = useRef(null);
+
 
     useEffect(() => {
         // gsap.utils.toArray('.text-OpReveal').forEach((section, index) => {
@@ -50,44 +50,44 @@ export const TextAppear = () => {
         // )
 
         ScrollTrigger.create({
-            trigger: '.text-OpReveal span',
+            trigger: targetSection.current.querySelector("span"),
             start: 'top 50%',
             end: 'bottom 50%',
             onEnter: () =>
-              gsap.to('.text-OpReveal span', {
+              gsap.to(targetSection.current.querySelector("span"), {
                 opacity: 1
               }),
             onEnterBack: () =>
-              gsap.to('.text-OpReveal span', {
+              gsap.to(targetSection.current.querySelector("span"), {
                 opacity: 1
               }),
             onLeave: () =>
-              gsap.to('.text-OpReveal span', {
+              gsap.to(targetSection.current.querySelector("span"), {
                 opacity: 0.2
               }),
             onLeaveBack: () =>
-              gsap.to('.text-OpReveal span', {
+              gsap.to(targetSection.current.querySelector("span"), {
                 opacity: 0.2
               }),
           });
         ScrollTrigger.create({
-            trigger: '.text-OpReveal p',
+            trigger: targetSection.current.querySelector("p"),
             start: 'top 50%',
             end: 'bottom 50%',
             onEnter: () =>
-              gsap.to('.text-OpReveal p', {
+              gsap.to(targetSection.current.querySelector("p"), {
                 opacity: 1
               }),
             onEnterBack: () =>
-              gsap.to('.text-OpReveal p', {
+              gsap.to(targetSection.current.querySelector("p"), {
                 opacity: 1
               }),
             onLeave: () =>
-              gsap.to('.text-OpReveal p', {
+              gsap.to(targetSection.current.querySelector("p"), {
                 opacity: 0.2
               }),
             onLeaveBack: () =>
-              gsap.to('.text-OpReveal p', {
+              gsap.to(targetSection.current.querySelector("p"), {
                 opacity: 0.2
               }),
           });
@@ -99,11 +99,14 @@ export const TextAppear = () => {
     
 
     return (
-        <div className="main-container text-OpReveal flex items-center justify-center">
+        <div 
+          className="main-container text-OpReveal flex items-center justify-center"
+          ref={targetSection}
+        >
             <div className="container  py-36">
                 <h2 className="text-2xl lg:text-6xl font-semibold text-center leading-[1.5]">
-                    <span className="opacity-10">I'm a passionate Engineer who's focused on building scalable and performant apps. </span>
-                    <p className="opacity-10">I take responsibility to craft a good user experience using modern frontend architecture.</p>
+                    <span className="opacity-[0.2]">I'm a passionate Developer who's focused on building scalable and performant websites. </span>
+                    <p className="opacity-[0.2] mt-8">I take responsibility to craft a good user experience using modern frontend architecture.</p>
                 </h2>
             </div>
         </div>

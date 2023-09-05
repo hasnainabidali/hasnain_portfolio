@@ -2,7 +2,7 @@ import React from 'react';
 
 export const MenuButton = ({ children }) => {
   return (
-    <div className=" group relative cursor-pointer overflow-hidden text-base md:text-2xl uppercase leading-6 text-white">
+    <div className="link group relative overflow-hidden text-base md:text-2xl uppercase leading-6 text-white">
       <span className="inline-block p-1 transition duration-500 ease-out group-hover:-translate-y-[120%]">
         {children}
       </span>
