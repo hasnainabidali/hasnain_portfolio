@@ -1,11 +1,14 @@
 
 import { Dispatch, SetStateAction } from "react";
 import { MENULINKS } from "constant";
+import { MenuButton } from "..";
 
 export const Menu = ({ setmenuVisible }) => {
+
+  // console.log(setmenuVisible)
   return (
     <section
-      className="menu fixed top-0 left-0 w-full h-full overflow-hidden invisible pointer-events-none flex items-center justify-center"
+      className="menu fixed top-0 left-0 w-full min-h-screen h-full overflow-hidden invisible pointer-events-none flex items-center justify-center"
       style={{ visibility: "hidden" }}
     >
       <div className="flex-none overflow-hidden flex items-center justify-center">
@@ -23,7 +26,7 @@ export const Menu = ({ setmenuVisible }) => {
                 <a
                   className="link relative inline font-bold text-5xl duration-300 hover:no-underline"
                   href={`#${el.ref}`}
-                  onClick={setmenuVisible.bind(null, false)}
+                  onClick={() => setmenuVisible(false)}
                 >
                   {el.name}
                 </a>

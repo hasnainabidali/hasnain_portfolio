@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { MainLogo } from '../Icons';
 import gsap from 'gsap';
 import { MenuButton } from '../MenuButton';
@@ -35,16 +35,12 @@ export const Header = () => {
 
   return (
     <div className="header md:cursor-none min-w-screen fixed left-0 top-0 z-10 w-screen px-4 lg:px-7 transition-all duration-500 ease-out">
-      <div className="overflow-hidden bg-none">
         <div className="header_container relative flex items-center justify-center transition-all duration-500 ease-out will-change-transform py-4 lg:py-8">
-          <nav>
-            <div className="absolute left-0"
-                onClick={setmenuVisible.bind(null, !menuVisible)}>
-              <MenuButton
-            >Menu</MenuButton>
-            </div>
-            <Menu setmenuVisible={setmenuVisible} />
-          </nav>
+          <div className="absolute left-0"
+              onClick={() => setmenuVisible(!menuVisible)}>
+            <MenuButton
+          >Menu</MenuButton>
+          </div>
           <div
             className="header_logo link pointer-event-auto leading-none transition-height [&>svg]:h-8 [&>svg]:duration-500 [&>svg]:ease-out md:[&>svg]:h-12 lg:[&>svg]:h-16"
             data-color="#a6e2e3"
@@ -58,7 +54,17 @@ export const Header = () => {
             <MenuButton>Contact</MenuButton>
           </div>
         </div>
-      </div>
+        <nav className={`outer-menu ${menuVisible ? "menu-visible" : ""}`}>
+          {/* {
+            menuVisible &&
+          } */}
+            <button className={`hamburger fixed top-10 ${menuVisible ? "visible" : "invisible"}`}
+                onClick={() => setmenuVisible(!menuVisible)}>
+              <MenuButton
+            >Close</MenuButton>
+            </button>
+          <Menu setmenuVisible={setmenuVisible} />
+        </nav>
     </div>
   );
 };
