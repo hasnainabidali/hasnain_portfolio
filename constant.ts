@@ -41,12 +41,32 @@ export const PROJECTS = [
   },
   {
     title : "NFT Avatar Maker",
-    tech: "React JS - Tailwind",
+    tech: "React JS - Tailwind CSS",
     link: "https://wirtschaftsschule-five.ch/",
     leftImg: "/projects/nftavatar1.png",
     RightImg: "/projects/nftavatar2.png",
     bgColor: "#c936f6",
     endbgcolor: "#1d16ff",
+    textColor: '#f5f4f5'
+  },
+  {
+    title : "Mood Mats",
+    tech: "Shopify - Fabric Js",
+    link: "https://custommoodmats.com/",
+    leftImg: "/projects/mats1.png",
+    RightImg: "/projects/mats2.png",
+    bgColor: "#120e16",
+    endbgcolor: "#120e16",
+    textColor: '#f5f4f5'
+  },
+  {
+    title : "Mawada",
+    tech: "Zendesk Theme",
+    link: "https://custommoodmats.com/",
+    leftImg: "/projects/mawada1.png",
+    RightImg: "/projects/mawada2.png",
+    bgColor: "#da4761",
+    endbgcolor: "#ef7d9a",
     textColor: '#f5f4f5'
   }
 ]
