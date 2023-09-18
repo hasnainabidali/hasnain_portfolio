@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import { Cursor, Layout, ProgressIndicator } from '@/components';
 import { Header } from '@/components';
-import { HomeHero, TextAppear, HomeHorizontalSection } from '@/Layout';
+import { HomeHero, TextAppear, HomeHorizontalSection, Projects } from '@/Layout';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import gsap from 'gsap';
 import { METADATA } from 'constant';
@@ -13,8 +13,10 @@ export default function Home() {
     
     const sectionColor = document.querySelectorAll('.color-section[data-bgcolor]');
     sectionColor.forEach((colorSection, i) => {
+        console.log(colorSection.dataset)
       
       const prevBgColor = i === 0 ? '' : sectionColor[i - 1].dataset.bgcolor;
+      const prevBgEndColor = i === 0 ? '' : sectionColor[i - 1].dataset.endbgcolor;
       const prevTextColor = i === 0 ? '' : sectionColor[i - 1].dataset.textcolor;
 
         ScrollTrigger.create({
@@ -22,13 +24,13 @@ export default function Home() {
           start: 'top 50%',
           onEnter: () =>
             gsap.to('body', {
-              backgroundColor: colorSection.dataset.bgcolor,
+              backgroundImage: "linear-gradient(90deg, " + colorSection.dataset.bgcolor + " 0%, " + colorSection.dataset.endbgcolor + " 100%)",
               color: colorSection.dataset.textcolor,
               overwrite: 'auto',
             }),
           onLeaveBack: () =>
             gsap.to('body', {
-              backgroundColor: prevBgColor,
+              backgroundImage: "linear-gradient(90deg, " + prevBgColor + " 0%, " + prevBgEndColor + " 100%)",
               color: prevTextColor,
               overwrite: 'auto',
             }),
@@ -57,6 +59,7 @@ export default function Home() {
             <section
               className="color-section"
               data-bgcolor="#120e16"
+              data-endbgcolor="#120e16"
               data-textcolor="#f5f4f5"
             >
               <HomeHero />
@@ -64,21 +67,32 @@ export default function Home() {
             <section
               className="color-section"
               data-bgcolor="#120e16"
+              data-endbgcolor="#120e16"
               data-textcolor="#f5f4f5"
             >
               <TextAppear />
             </section>
-            
             <section
               className="color-section"
+              data-bgcolor="#120e16"
+              data-endBgcolor="#120e16"
+              data-textcolor="#f5f4f5"
+            >
+              <Projects />
+            </section>
+            
+            {/* <section
+              className="color-section"
               data-bgcolor="#f5f4f5"
+              data-endBgcolor="#f5f4f5"
               data-textcolor="#120e16"
             >
               <HomeHorizontalSection />
-            </section>
+            </section> */}
             <section
               className="color-section text-3xl min-h-screen flex items-center justify-center"
               data-bgcolor="#120e16"
+              data-endBgcolor="#120e16"
               data-textcolor="#f5f4f5"
             >
               <footer className="flex items-center justify-center text-2xl my-96 ">

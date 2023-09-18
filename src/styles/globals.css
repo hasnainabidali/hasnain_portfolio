@@ -86,13 +86,17 @@ body.hide_header .header .header_container{
   transform: translateY(-100%);
 }
 
-body.scrolled .header {
+body.scrolled .header .header_container {
   background: #120e16;
+}
+.header .header_container .group.link span{
+  color: #f5f4f5
 }
 
 @media (min-width: 1024px) {
   body.scrolled .header_container {
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   body.scrolled .header_logo svg {
