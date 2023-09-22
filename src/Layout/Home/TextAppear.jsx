@@ -100,7 +100,7 @@ export const TextAppear = () => {
 
     return (
         <div 
-          className="main-container text-OpReveal flex items-center justify-center"
+          className="main-container text-OpReveal flex items-center justify-center min-h-[80vh]"
           ref={targetSection}
         >
             <div className="container  py-36">

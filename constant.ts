@@ -70,3 +70,90 @@ export const PROJECTS = [
     textColor: '#f5f4f5'
   }
 ]
+
+export const SKILLS = [
+  {
+    title : "Javascript",
+    img: "/tools/javascript.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "jQuery",
+    img: "/tools/jquery.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "Next JS",
+    img: "/tools/next.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "React",
+    img: "/tools/react.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "Tailwind CSS",
+    img: "/tools/tailwind.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "Bootstrap",
+    img: "/tools/bootstrap.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "GSAP",
+    img: "/tools/gsap.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "SASS",
+    img: "/tools/sass.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+]
+
+
+export const OTHER_SKILLS = [
+  {
+    title : "PHP",
+    img: "/tools/php.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "Wordpress",
+    img: "/tools/wordpress.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "Shopify",
+    img: "/tools/shopify.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "Zendesk",
+    img: "/tools/zendesk.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "Figma",
+    img: "/tools/figma.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "Adobe XD",
+    img: "/tools/adobe-xd.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "Photoshop",
+    img: "/tools/photoshop.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+  {
+    title : "Illustator",
+    img: "/tools/ai.svg",
+    link: "https://wirtschaftsschule-five.ch/",
+  },
+]

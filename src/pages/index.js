@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import { Cursor, Layout, ProgressIndicator } from '@/components';
 import { Header } from '@/components';
-import { HomeHero, TextAppear, HomeHorizontalSection, Projects } from '@/Layout';
+import { HomeHero, TextAppear, HomeHorizontalSection, Projects, SkillsSection, Footer } from '@/Layout';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import gsap from 'gsap';
 import { METADATA } from 'constant';
@@ -80,6 +80,14 @@ export default function Home() {
             >
               <Projects />
             </section>
+            <section
+              className="color-section"
+              data-bgcolor="#120e16"
+              data-endBgcolor="#120e16"
+              data-textcolor="#f5f4f5"
+            >
+              <SkillsSection />
+            </section>
             
             {/* <section
               className="color-section"
@@ -90,16 +98,12 @@ export default function Home() {
               <HomeHorizontalSection />
             </section> */}
             <section
-              className="color-section text-3xl min-h-screen flex items-center justify-center"
+              className="color-section"
               data-bgcolor="#120e16"
               data-endBgcolor="#120e16"
               data-textcolor="#f5f4f5"
             >
-              <footer className="flex items-center justify-center text-2xl my-96 ">
-                <a href="https://unsplash.com/">
-                  All Images are from <span className="text-green link">Unsplash</span>
-                </a>
-              </footer>
+              <Footer />
           </section>
         </main>
       </Layout>

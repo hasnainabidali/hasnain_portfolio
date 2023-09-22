@@ -52,7 +52,7 @@ export const Header = () => {
               <MainLogo />
             </div>
             <div className="absolute top-0 right-0">
-              <MenuButton>Contact</MenuButton>
+              <MenuButton link="mailto:hasnainrhraza@gmail.com">Contact</MenuButton>
             </div>
           </div>        
         </div>

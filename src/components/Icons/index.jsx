@@ -12,6 +12,7 @@ export const MainLogo = () => {
         fill="#f5f4f5"
       />
     </svg>
+    
   );
 };
 

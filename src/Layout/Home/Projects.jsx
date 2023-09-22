@@ -14,9 +14,9 @@ export const Projects = () => {
             const Rightwrapper = section.querySelector('.right-projectImage');
             gsap.fromTo(
                 section,
-              { y: '10%' },
+              { y: '14%' },
               {
-                y: '0%',
+                y: '6%',
                 scrollTrigger: {
                   trigger: section,
                   scrub: 0.5,
@@ -56,7 +56,9 @@ export const Projects = () => {
 
 
     return(
-        <div className="project-list">
+        <div className="project-list pt-24" id="works">
+            <h2 className="text-primary text-center font-bold text-2xl md:text-5xl mb-8">My Work</h2>
+            <h2 className="text-center uppercase font-bold opacity-80 tracking-widest">Recent Projects</h2>
             {PROJECTS.map((el) => (
                 <section
                     className="color-section"
@@ -64,8 +66,8 @@ export const Projects = () => {
                     data-endbgcolor={el.endbgcolor}
                     data-textcolor={el.textColor}
                     >
-                    <div className="project-item h-full md:h-[200vh] w-full ">
-                        <div className="flex items-center justify-center flex-col md:flex-row w-full h-full md:h-[100vh] sticky top-0 overflow-hidden py-10 md:py-0">
+                    <div className="project-item h-full md:h-[160vh] w-full ">
+                        <div className="flex items-center justify-center flex-col md:flex-row w-full h-full md:h-[80vh] sticky top-0 overflow-hidden py-10 md:py-0">
                             <div className="left-projectImage z-10 will-change-transform">
                                 <Image 
                                     src={el.leftImg}
@@ -77,7 +79,7 @@ export const Projects = () => {
                                     />
                             </div>
                             <div className="projectWrapper relative w-full md:w-[50vw] h-[300px] md:h-full max-w-[600px] flex flex-col items-center justify-center gap-y-[20px] md:gap-y-[120px] px-[64px] py-10 md:py-0 z-0">
-                                <div className="uppercase text-sm">{el.tech}</div>
+                                <div className="uppercase text-sm tracking-wide">{el.tech}</div>
                                 <h2 className="text-3xl md:text-5xl text-center leading-[1.25em]">{el.title}</h2>
                                 <MenuButton
                                     classes="md:text-sm text-sm border rounded-full w-[60px] text-center"

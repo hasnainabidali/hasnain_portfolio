@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       animation: {
         loopL: 'loopTextLeft  4s linear infinite',
+        'spin-slow': 'spin 10s linear infinite',
       },
       keyframes: {
         loopTextLeft: {

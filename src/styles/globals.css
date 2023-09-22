@@ -215,3 +215,10 @@ a:hover{
 .outer-menu .menu > div ul li a:hover, .outer-menu .menu > div ul li a:focus {
   background-position: 100% 0;
 }
+
+
+.lg-heading{
+  background: linear-gradient(90deg,#fdd600,#b19703);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
