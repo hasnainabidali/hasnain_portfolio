@@ -1,8 +1,8 @@
 export const METADATA = {
-    title: "Portfolio | Hasnain Raza",
+    title: "Hasnain Raza - Web Developer",
     description:
       "I help companies to Transform their Ideas into Exceptional User Experiences.",
-    // siteUrl: "https://ayushsingh.net/",
+    siteUrl: "https://hasnain-portfolio-iota.vercel.app/",
   };
 
 export const MENULINKS = [
