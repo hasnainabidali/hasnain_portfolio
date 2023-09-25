@@ -19,12 +19,12 @@ export const Menu = ({ setmenuVisible }) => {
           >
             {MENULINKS.map((el) => (
               <li
-                className="p-0 m-6 text-2xl block"
+                className="p-0 m-4 md:m-6 text-2xl block"
                 key={el.name}
                 role="menuitem"
               >
                 <a
-                  className="link relative inline font-bold text-5xl duration-300 hover:no-underline"
+                  className="link relative inline font-bold text-4xl md:text-5xl duration-300 hover:no-underline"
                   href={`#${el.ref}`}
                   onClick={() => setmenuVisible(false)}
                 >

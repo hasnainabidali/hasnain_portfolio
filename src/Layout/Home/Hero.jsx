@@ -5,7 +5,7 @@ import { gsap, Linear } from "gsap";
 import { CustomEase } from 'gsap/dist/CustomEase';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { Player } from '@lottiefiles/react-lottie-player';
-import likeCrazyLottie from '../../lottie/like-cray.json'
+import likeCrazyLottie from '../../lottie/hero-anim3.json'
 import authorPic from '../../images/human.jpg';
 import scrollerImg from '../../../public/scrollerdown.svg';
 import { TextPlugin } from 'gsap/dist/TextPlugin';
@@ -18,7 +18,7 @@ export const HomeHero = () => {
   const heroInfiniteRef = useRef(null);
   const likeCrazyLottieRef = useRef(null);
 
-  const whatIdo = ['I Am Passionate Freelancer', 'A pragmatic Front End Developer', 'I do thing for web'];
+  const whatIdo = ['A pragmatic Front End Developer', 'I transform ideas into outstanding user experiences', 'I Am Passionate Freelancer'];
 
   useEffect(() => {
     const titles = document.querySelectorAll('.h_title');
@@ -41,16 +41,7 @@ export const HomeHero = () => {
 
 
 
-    // tl.add(() => likeCrazyLottieRef?.current?.play(), 0.8 ).to(
-    //   heroInfiniteRef?.current,
-    //   {
-    //     marginLeft: 0,
-    //     marginRight: 0,
-    //     opacity: 1,
-    //     ease: 'power1.out',
-    //   },
-    //   1.2
-    // );
+    tl.add(() => likeCrazyLottieRef?.current?.play(), 0.2 );
 
     gsap.to('#whatIdo .cursor', {opacity:0, ease: "power2.inOut", repeat:-1, duration: 0.75})
 
@@ -83,11 +74,15 @@ export const HomeHero = () => {
     socialExpand.to(span, { width: 'auto', opacity: 1, xPercent:5, ease:"power4.inOut"})
 
     el.addEventListener('mouseenter', function() {
-      socialExpand.play()
+      if(window.innerWidth > 767){
+        socialExpand.play()
+      }
     });
     
     el.addEventListener('mouseleave', function() {
-      socialExpand.reverse()
+      if(window.innerWidth > 767){
+        socialExpand.reverse()
+      }
     });
   })
 
@@ -95,7 +90,7 @@ export const HomeHero = () => {
   }, []);
 
   return (
-    <div className="flex items-center min-h-screen pt-[120px] pb-[90px] lg:py-[180px]">
+    <div className="flex items-center min-h-screen pt-[120px] pb-[90px] lg:py-[180px]" id="home">
       <div className="container h_container px-4 md:px0 flex items-center flex-col md:flex-row">
         <div className="w-full md:w-1/2">
           <h1 className="h_title relative w-full font-bold text-2xl leading-[90%] lg:text-5xl text-primary mb-4 md:mb-8">
@@ -108,16 +103,16 @@ export const HomeHero = () => {
           <h1 className="h_title  relative w-full font-bold text-5xl leading-[100%] lg:text-[4vw] mb-4">
             <span className="-mb-1.5 -mt-6 inline-block overflow-hidden align-bottom">
               <span className="inline-block  translate-y-full pb-1.5 pt-6 will-change-transform">
-                I Am Johnny.
+                I Am Hasnain.
               </span>
             </span>
           </h1>
           
           <h1 className="h_title relative w-full text-xl font-semibold leading-[90%] lg:text-3xl mb-4">
             <span className="-mb-1.5 -mt-6 inline-block overflow-hidden align-bottom">
-              <span id="whatIdo" className="inline-block min-h-[70px] text-[#aaaaaa] font-jetbrains translate-y-full pb-1.5 pt-6 will-change-transform ">
+              <span id="whatIdo" className="inline-block min-h-[80px] md:min-h-[110px] text-[#aaaaaa] font-jetbrains translate-y-full pb-1.5 pt-6 will-change-transform ">
                 <span className="box"></span>
-                <span className="texttt leading-6"></span>
+                <span className="texttt leading-6 capitalize"></span>
                 <span className="cursor text-white">|</span>
               </span>
             </span>
@@ -167,12 +162,15 @@ export const HomeHero = () => {
         </div>
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
           <div className="text-center">
-              <Image src={authorPic}
+              {/* <Image src={authorPic}
                 className="rounded-full mx-auto"
                 width={500}
                 height={500}
                 alt="Picture of the author"
-                />
+                /> */}
+              <div className="">
+                <Player ref={likeCrazyLottieRef} src={likeCrazyLottie} keepLastFrame={false} loop={true} />
+            </div>
           </div>
         </div>
       </div>

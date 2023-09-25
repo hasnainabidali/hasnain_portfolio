@@ -18,10 +18,10 @@ export const MENULINKS = [
     name: "Skills",
     ref: "skills",
   },
-  {
-    name: "Timeline",
-    ref: "timeline",
-  },
+  // {
+  //   name: "Timeline",
+  //   ref: "timeline",
+  // },
   {
     name: "Contact",
     ref: "contact",

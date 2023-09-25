@@ -57,8 +57,8 @@ export const Projects = () => {
 
     return(
         <div className="project-list pt-24" id="works">
-            <h2 className="text-primary text-center font-bold text-2xl md:text-5xl mb-8">My Work</h2>
-            <h2 className="text-center uppercase font-bold opacity-80 tracking-widest">Recent Projects</h2>
+            <h2 className="text-primary text-center font-bold text-3xl md:text-5xl mb-4 md:mb-8">My Work</h2>
+            <h2 className="text-center text-sm md:text-base uppercase font-bold opacity-80 tracking-widest">Recent Projects</h2>
             {PROJECTS.map((el) => (
                 <section
                     className="color-section"

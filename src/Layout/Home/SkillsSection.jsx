@@ -33,7 +33,7 @@ export const SkillsSection = () => {
     
 
     return (
-        <div className="container min-h-screen flex flex-col items-center justify-center" id="skills">
+        <div className="container min-h-[80vh] flex flex-col items-center justify-center mt-20 md:mt-0" id="skills">
             <h2 className="text-primary text-center font-bold text-2xl md:text-4xl mb-8">Skills</h2>
             <h2 className="text-center uppercase font-bold opacity-80 tracking-widest">Frontend DEVELOPMENT</h2>
             <ul className="skillset flex flex-wrap items-center justify-center my-12">

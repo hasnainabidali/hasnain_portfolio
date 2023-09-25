@@ -87,7 +87,9 @@ body.hide_header .header .header_container{
 }
 
 body.scrolled .header .header_container {
-  background: #120e16;
+  background: rgb(18 14 22 / 85%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 .header .header_container .group.link span{
   color: #f5f4f5
@@ -100,7 +102,7 @@ body.scrolled .header .header_container {
   }
 
   body.scrolled .header_logo svg {
-    height: 38px;
+    height: 45px;
   }
 }
 
@@ -221,4 +223,10 @@ a:hover{
   background: linear-gradient(90deg,#fdd600,#b19703);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.text-gradient {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg,#ffffff40,#ffffff40 50%,#ffffff 50%,#ffffff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
 }

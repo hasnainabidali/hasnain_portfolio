@@ -37,13 +37,13 @@ export const Header = () => {
     <div className="header md:cursor-none min-w-screen fixed left-0 top-0 z-10 w-screen transition-all duration-500 ease-out">
         <div className="header_container relative flex items-center justify-center transition-all duration-500 ease-out will-change-transform py-4 lg:py-8 px-4 lg:px-7 ">
           <div className="relative w-full">
-            <div className="absolute top-0 left-0"
+            <div className="absolute top-1/2 -translate-y-1/2 left-0"
                 onClick={() => setmenuVisible(!menuVisible)}>
               <MenuButton
             >Menu</MenuButton>
             </div>
             <div
-              className="header_logo w-auto link pointer-event-auto leading-none transition-height [&>svg]:h-8 [&>svg]:duration-500 [&>svg]:ease-out md:[&>svg]:h-12 lg:[&>svg]:h-16"
+              className="header_logo max-w-fit mx-auto link pointer-event-auto leading-none transition-height [&>svg]:h-10 [&>svg]:duration-500 [&>svg]:ease-out md:[&>svg]:h-12 lg:[&>svg]:h-16"
               data-color="#a6e2e3"
               ref={logoRef}
               onMouseEnter={onLogoEnter}
@@ -51,7 +51,7 @@ export const Header = () => {
             >
               <MainLogo />
             </div>
-            <div className="absolute top-0 right-0">
+            <div className="absolute top-1/2 -translate-y-1/2  right-0">
               <MenuButton link="mailto:hasnainrhraza@gmail.com">Contact</MenuButton>
             </div>
           </div>        

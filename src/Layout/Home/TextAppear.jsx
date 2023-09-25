@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import gsap from 'gsap';
+import gsap, { Linear } from 'gsap';
 
 export const TextAppear = () => {
   
@@ -49,48 +49,69 @@ export const TextAppear = () => {
         // }
         // )
 
-        ScrollTrigger.create({
-            trigger: targetSection.current.querySelector("span"),
-            start: 'top 50%',
-            end: 'bottom 50%',
-            onEnter: () =>
-              gsap.to(targetSection.current.querySelector("span"), {
-                opacity: 1
-              }),
-            onEnterBack: () =>
-              gsap.to(targetSection.current.querySelector("span"), {
-                opacity: 1
-              }),
-            onLeave: () =>
-              gsap.to(targetSection.current.querySelector("span"), {
-                opacity: 0.2
-              }),
-            onLeaveBack: () =>
-              gsap.to(targetSection.current.querySelector("span"), {
-                opacity: 0.2
-              }),
-          });
-        ScrollTrigger.create({
-            trigger: targetSection.current.querySelector("p"),
-            start: 'top 50%',
-            end: 'bottom 50%',
-            onEnter: () =>
-              gsap.to(targetSection.current.querySelector("p"), {
-                opacity: 1
-              }),
-            onEnterBack: () =>
-              gsap.to(targetSection.current.querySelector("p"), {
-                opacity: 1
-              }),
-            onLeave: () =>
-              gsap.to(targetSection.current.querySelector("p"), {
-                opacity: 0.2
-              }),
-            onLeaveBack: () =>
-              gsap.to(targetSection.current.querySelector("p"), {
-                opacity: 0.2
-              }),
-          });
+        // ScrollTrigger.create({
+        //     trigger: targetSection.current.querySelector("span"),
+        //     start: 'top 50%',
+        //     end: 'bottom 50%',
+        //     onEnter: () =>
+        //       gsap.to(targetSection.current.querySelector("span"), {
+        //         opacity: 1
+        //       }),
+        //     onEnterBack: () =>
+        //       gsap.to(targetSection.current.querySelector("span"), {
+        //         opacity: 1
+        //       }),
+        //     onLeave: () =>
+        //       gsap.to(targetSection.current.querySelector("span"), {
+        //         opacity: 0.2
+        //       }),
+        //     onLeaveBack: () =>
+        //       gsap.to(targetSection.current.querySelector("span"), {
+        //         opacity: 0.2
+        //       }),
+        //   });
+        // ScrollTrigger.create({
+        //     trigger: targetSection.current.querySelector("p"),
+        //     start: 'top 50%',
+        //     end: 'bottom 50%',
+        //     onEnter: () =>
+        //       gsap.to(targetSection.current.querySelector("p"), {
+        //         opacity: 1
+        //       }),
+        //     onEnterBack: () =>
+        //       gsap.to(targetSection.current.querySelector("p"), {
+        //         opacity: 1
+        //       }),
+        //     onLeave: () =>
+        //       gsap.to(targetSection.current.querySelector("p"), {
+        //         opacity: 0.2
+        //       }),
+        //     onLeaveBack: () =>
+        //       gsap.to(targetSection.current.querySelector("p"), {
+        //         opacity: 0.2
+        //       }),
+        //   });
+
+        const element = document.querySelector('.text-OpReveal');
+        let timeline = new gsap.timeline({paused: true, ease: Linear.easeNone})
+        const span = element.querySelector('h2 span');
+
+        timeline.fromTo(
+          span,
+          {
+            // duration: 2
+          },
+          {
+            backgroundPositionX: "-100%",
+            duration: 1,
+            scrollTrigger: {
+              trigger: element,
+              start: "center bottom",
+              end: "center center",
+              scrub: 0.5,
+            },
+          }
+        )
     
       return () => {
         
@@ -103,10 +124,9 @@ export const TextAppear = () => {
           className="main-container text-OpReveal flex items-center justify-center min-h-[80vh]"
           ref={targetSection}
         >
-            <div className="container  py-36">
+            <div className="container px-4 md:px-0 py-36">
                 <h2 className="text-2xl lg:text-6xl font-semibold text-center leading-[1.5]">
-                    <span className="opacity-[0.2]">I'm a passionate Developer who's focused on building scalable and performant websites. </span>
-                    <p className="opacity-[0.2] mt-8">I take responsibility to craft a good user experience using modern frontend architecture.</p>
+                    <span className="text-gradient">I'm a passionate Developer who's focused on building scalable and performant websites. I take responsibility to craft a good user experience using modern frontend architecture.</span>
                 </h2>
             </div>
         </div>
