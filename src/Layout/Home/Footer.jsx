@@ -39,8 +39,8 @@ export const Footer = () => {
     }, [])
 
     return (
-        <div className="container pt-24 pb-8 md:pb-10" id="contact">
-        <h2 className="text-primary text-center font-bold text-2xl md:text-4xl mb-8">Let's chat</h2>
+        <div className="container pt-24 pb-8 md:pb-10 px-2 md:px-0" id="contact">
+        <h2 className="text-primary text-center font-bold text-3xl md:text-4xl mb-8">Let's chat</h2>
             {/* <h2 className="text-center text-sm uppercase opacity-80">Get in Touch</h2> */}
             <h2 className="text-center">Have something you need built? Want to talk through an idea? Get in touch. I'm friendly!</h2>
             <div className="text-center my-8">

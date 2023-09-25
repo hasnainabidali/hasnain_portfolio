@@ -34,7 +34,7 @@ export const SkillsSection = () => {
 
     return (
         <div className="container min-h-[80vh] flex flex-col items-center justify-center mt-20 md:mt-0" id="skills">
-            <h2 className="text-primary text-center font-bold text-2xl md:text-4xl mb-8">Skills</h2>
+            <h2 className="text-primary text-center font-bold text-3xl md:text-4xl mb-8">Skills</h2>
             <h2 className="text-center uppercase font-bold opacity-80 tracking-widest">Frontend DEVELOPMENT</h2>
             <ul className="skillset flex flex-wrap items-center justify-center my-12">
                 {SKILLS.map((el) => (
@@ -43,8 +43,8 @@ export const SkillsSection = () => {
                             src={el.img}
                             width={65}
                             height={65}
-                            className="mb-4 mx-auto rounded-full"
-                            alt="Picture of the author"
+                            className="w-[50px] h-[50px] md:w-[65px] md:h-[65px] mb-4 mx-auto rounded-full"
+                            alt="Skill"
                             />
                         <span className="hidden md:block absolute w-max translate-x-[-50%] left-[50%] bg-primary scale-0 text-black text-xs font-semibold rounded px-3 py-[6px]">{el.title}</span>
                     </li>
@@ -58,8 +58,8 @@ export const SkillsSection = () => {
                             src={el.img}
                             width={65}
                             height={65}
-                            className="mb-4 mx-auto rounded-full"
-                            alt="Picture of the author"
+                            className="w-[50px] h-[50px] md:w-[65px] md:h-[65px] mb-4 mx-auto rounded-full"
+                            alt="Skill"
                             />
                         <span className="hidden md:block absolute w-max translate-x-[-50%] left-[50%] bg-primary scale-0 text-black text-xs font-semibold rounded px-3 py-[6px]">{el.title}</span>
                     </li>
