@@ -42,7 +42,7 @@ export const PROJECTS = [
   {
     title : "NFT Avatar Maker",
     tech: "React JS - Tailwind CSS",
-    link: "https://wirtschaftsschule-five.ch/",
+    link: "https://nftavatarmaker.vercel.app/",
     leftImg: "/projects/nftavatar1.png",
     RightImg: "/projects/nftavatar2.png",
     bgColor: "#c936f6",
@@ -62,7 +62,7 @@ export const PROJECTS = [
   {
     title : "Mawada",
     tech: "Zendesk Theme",
-    link: "https://custommoodmats.com/",
+    link: "https://support.mawada.net/hc/en-us/",
     leftImg: "/projects/mawada1.png",
     RightImg: "/projects/mawada2.png",
     bgColor: "#da4761",

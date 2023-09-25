@@ -90,7 +90,7 @@ export const HomeHero = () => {
   }, []);
 
   return (
-    <div className="flex items-center min-h-screen pt-[120px] pb-[90px] lg:py-[180px]" id="home">
+    <div className="flex items-center min-h-screen " id="home">
       <div className="container h_container px-4 md:px0 flex items-center flex-col md:flex-row">
         <div className="w-full md:w-1/2">
           <h1 className="h_title relative w-full font-bold text-2xl leading-[90%] lg:text-5xl text-primary mb-4 md:mb-8">
