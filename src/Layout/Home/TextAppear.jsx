@@ -124,8 +124,8 @@ export const TextAppear = () => {
           className="main-container text-OpReveal flex items-center justify-center min-h-[80vh]"
           ref={targetSection}
         >
-            <div className="container px-4 md:px-0 py-36">
-                <h2 className="text-2xl lg:text-6xl font-semibold text-center leading-[1.5]">
+            <div className="container px-4 md:px-2 lg:px-0 py-36">
+                <h2 className="text-2xl md:text-4xl lg:text-6xl font-semibold text-center leading-[1.5]">
                     <span className="text-gradient">I'm a passionate Developer who's focused on building scalable and performant websites. I take responsibility to craft a good user experience using modern frontend architecture.</span>
                 </h2>
             </div>

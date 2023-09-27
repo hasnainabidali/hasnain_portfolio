@@ -66,19 +66,19 @@ export const Projects = () => {
                     data-endbgcolor={el.endbgcolor}
                     data-textcolor={el.textColor}
                     >
-                    <div className="project-item h-full md:h-[160vh] w-full ">
-                        <div className="flex items-center justify-center flex-col md:flex-row w-full h-full md:h-[80vh] sticky top-0 overflow-hidden py-10 md:py-0">
+                    <div className="project-item h-full lg:h-[160vh] w-full ">
+                        <div className="flex items-center justify-center flex-col lg:flex-row w-full h-full lg:h-[80vh] sticky top-0 overflow-hidden py-10 md:py-0">
                             <div className="left-projectImage z-10 will-change-transform">
                                 <Image 
                                     src={el.leftImg}
                                     width="0"
                                     height="0"
                                     sizes="100vw"
-                                    className="w-full h-[230px] md:h-auto"
+                                    className="w-full h-[230px] md:h-[280px] lg:h-auto"
                                     alt="Picture of the author"
                                     />
                             </div>
-                            <div className="projectWrapper relative w-full md:w-[50vw] h-[300px] md:h-full max-w-[600px] flex flex-col items-center justify-center gap-y-[20px] md:gap-y-[120px] px-[64px] py-10 md:py-0 z-0">
+                            <div className="projectWrapper relative w-full lg:w-[50vw] h-[300px] lg:h-full max-w-[600px] flex flex-col items-center justify-center gap-y-[20px] lg:gap-y-[120px] px-[64px] py-10 md:py-0 z-0">
                                 <div className="uppercase text-sm tracking-wide">{el.tech}</div>
                                 <h2 className="text-3xl md:text-5xl text-center leading-[1.25em]">{el.title}</h2>
                                 <MenuButton
@@ -92,7 +92,7 @@ export const Projects = () => {
                                     width="0"
                                     height="0"
                                     sizes="100vw"
-                                    className="w-full h-[230px] md:h-auto"
+                                    className="w-full h-[230px] md:h-[280px] lg:h-auto"
                                     alt="Picture of the author"
                                     />
                             </div>

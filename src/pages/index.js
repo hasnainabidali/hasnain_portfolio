@@ -50,7 +50,7 @@ export default function Home() {
         <title>{ METADATA.title }</title>
       </Head>
       <Layout>
-          {/* <ProgressIndicator /> */}
+          <ProgressIndicator />
           <Header />
           <Cursor isDesktop={true} />
           <main className=" w-auto md:cursor-none">

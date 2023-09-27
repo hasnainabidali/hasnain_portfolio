@@ -110,7 +110,7 @@ export const HomeHero = () => {
           
           <h1 className="h_title relative w-full text-xl font-jetbrains font-semibold text-[#aaaaaa]  leading-[90%] lg:text-3xl mb-4">
             <span className="-mb-1.5 -mt-6 inline-block overflow-hidden align-bottom">
-              <span id="whatIdo" className="inline-block min-h-[80px] md:min-h-[110px] translate-y-full pb-1.5 pt-6 will-change-transform ">
+              <span id="whatIdo" className="inline-block min-h-[80px] md:min-h-[90px] lg:min-h-[110px] translate-y-full pb-1.5 pt-6 will-change-transform ">
                 <span className="box"></span>
                 <span className="texttt leading-6 capitalize"></span>
                 <span className="cursor text-white">|</span>
