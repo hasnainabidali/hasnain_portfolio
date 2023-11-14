@@ -74,43 +74,35 @@ export const PROJECTS = [
 export const SKILLS = [
   {
     title : "Javascript",
-    img: "/tools/javascript.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/javascript.svg"
   },
   {
     title : "jQuery",
-    img: "/tools/jquery.svg",
-    link: "https://wirtschaftsschule-five.ch/",
-  },
-  {
-    title : "Next JS",
-    img: "/tools/next.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/jquery.svg"
   },
   {
     title : "React",
-    img: "/tools/react.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/react.svg"
+  },
+  {
+    title : "Next JS",
+    img: "/tools/next.svg"
   },
   {
     title : "Tailwind CSS",
-    img: "/tools/tailwind.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/tailwind.svg"
   },
   {
     title : "Bootstrap",
-    img: "/tools/bootstrap.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/bootstrap.svg"
   },
   {
     title : "GSAP",
-    img: "/tools/gsap.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/gsap.svg"
   },
   {
     title : "SASS",
-    img: "/tools/sass.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/sass.svg"
   },
 ]
 
@@ -118,42 +110,42 @@ export const SKILLS = [
 export const OTHER_SKILLS = [
   {
     title : "PHP",
-    img: "/tools/php.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/php.svg"
+  },
+  {
+    title : "MySQL",
+    img: "/tools/mysql.svg"
   },
   {
     title : "Wordpress",
-    img: "/tools/wordpress.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/wordpress.svg"
   },
   {
     title : "Shopify",
-    img: "/tools/shopify.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/shopify.svg"
+  },
+  {
+    title : "Help Scout",
+    img: "/tools/helpscout.svg"
   },
   {
     title : "Zendesk",
-    img: "/tools/zendesk.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/zendesk.svg"
   },
   {
     title : "Figma",
-    img: "/tools/figma.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/figma.svg"
   },
   {
     title : "Adobe XD",
-    img: "/tools/adobe-xd.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/adobe-xd.svg"
   },
   {
     title : "Photoshop",
-    img: "/tools/photoshop.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/photoshop.svg"
   },
   {
     title : "Illustator",
-    img: "/tools/ai.svg",
-    link: "https://wirtschaftsschule-five.ch/",
+    img: "/tools/ai.svg"
   },
 ]
