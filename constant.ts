@@ -31,7 +31,7 @@ export const MENULINKS = [
 export const PROJECTS = [
   {
     title : "Wirtschaftsschule Five",
-    tech: "Wordpress",
+    tech: "Wordpress - Divi",
     link: "https://wirtschaftsschule-five.ch/",
     leftImg: "/projects/wirtscha1.png",
     RightImg: "/projects/wirtscha2.png",
@@ -68,8 +68,51 @@ export const PROJECTS = [
     bgColor: "#da4761",
     endbgcolor: "#ef7d9a",
     textColor: '#f5f4f5'
+  },
+  {
+    title : "Shown",
+    tech: "HTML/CSS - Bootstrap - GSAP",
+    link: "https://shownvds.visionarydesignshop.com/",
+    leftImg: "/projects/shown1.png",
+    RightImg: "/projects/shown2.png",
+    bgColor: "#120e16",
+    endbgcolor: "#120e16",
+    textColor: '#f5f4f5'
+  },
+  {
+    title : "Nemo Arms",
+    tech: "Freshdesk Portal",
+    link: "https://nemoarms.freshdesk.com/support/home/",
+    leftImg: "/projects/nemo1.png",
+    RightImg: "/projects/nemo2.png",
+    bgColor: "#120e16",
+    endbgcolor: "#120e16",
+    textColor: '#f5f4f5'
   }
 ]
+
+// export const MORE_PROJECTS = [
+//   {
+//     title : "Wirtschaftsschule Five",
+//     tech: "Wordpress",
+//     link: "https://wirtschaftsschule-five.ch/",
+//     leftImg: "/projects/wirtscha1.png",
+//     RightImg: "/projects/wirtscha2.png",
+//     bgColor: "#120e16",
+//     endbgcolor: "#120e16",
+//     textColor: '#f5f4f5'
+//   },
+//   {
+//     title : "NFT Avatar Maker",
+//     tech: "React JS - Tailwind CSS",
+//     link: "https://nftavatarmaker.vercel.app/",
+//     leftImg: "/projects/nftavatar1.png",
+//     RightImg: "/projects/nftavatar2.png",
+//     bgColor: "#c936f6",
+//     endbgcolor: "#1d16ff",
+//     textColor: '#f5f4f5'
+//   },
+// ]
 
 export const SKILLS = [
   {

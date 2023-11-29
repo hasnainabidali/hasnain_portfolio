@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import { Cursor, Layout, ProgressIndicator } from '@/components';
 import { Header } from '@/components';
-import { HomeHero, TextAppear, HomeHorizontalSection, Projects, SkillsSection, Footer } from '@/Layout';
+import { HomeHero, TextAppear, HomeHorizontalSection, Projects, SkillsSection, Footer, HistorySection } from '@/Layout';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import gsap from 'gsap';
 import { METADATA } from 'constant';
@@ -78,6 +78,14 @@ export default function Home() {
             >
               <Projects />
             </section>
+            {/* <section
+              className="color-section"
+              data-bgcolor="#120e16"
+              data-endBgcolor="#120e16"
+              data-textcolor="#f5f4f5"
+            >
+              <HistorySection />
+            </section> */}
             <section
               className="color-section"
               data-bgcolor="#120e16"
