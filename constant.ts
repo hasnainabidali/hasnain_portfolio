@@ -32,6 +32,7 @@ export const PROJECTS = [
   {
     title: 'Wirtschaftsschule Five',
     tech: 'Wordpress - Divi',
+    techs: ['WordPress', 'Divi'],
     link: 'https://wirtschaftsschule-five.ch/',
     leftImg: '/projects/wirtscha1.webp',
     RightImg: '/projects/wirtscha2.webp',
@@ -42,6 +43,7 @@ export const PROJECTS = [
   {
     title: 'NFT Avatar Maker',
     tech: 'React JS - Tailwind CSS',
+    techs: ['React JS', 'Tailwind CSS'],
     link: 'https://nftavatarmaker.vercel.app/',
     leftImg: '/projects/nftavatar1.webp',
     RightImg: '/projects/nftavatar2.webp',
@@ -52,6 +54,7 @@ export const PROJECTS = [
   {
     title: 'Mood Mats',
     tech: 'Shopify - Fabric Js',
+    techs: ['Shopify', 'Fabric JS'],
     link: 'https://custommoodmats.com/',
     leftImg: '/projects/mats1.webp',
     RightImg: '/projects/mats2.webp',
@@ -62,6 +65,7 @@ export const PROJECTS = [
   {
     title: 'Mawada',
     tech: 'Zendesk Theme',
+    techs: ['Zendesk Theme'],
     link: 'https://support.mawada.net/hc/en-us/',
     leftImg: '/projects/mawada1.webp',
     RightImg: '/projects/mawada2.webp',
@@ -72,7 +76,8 @@ export const PROJECTS = [
   {
     title: 'Shown',
     tech: 'HTML/CSS - Bootstrap - GSAP',
-    link: 'https://shownvds.visionarydesignshop.com/',
+    techs: ['HTML/CSS', 'Bootstrap', 'GSAP'],
+    link: 'https://shown.io',
     leftImg: '/projects/shown1.webp',
     RightImg: '/projects/shown2.webp',
     bgColor: '#120e16',
@@ -82,6 +87,7 @@ export const PROJECTS = [
   {
     title: 'Nemo Arms',
     tech: 'Freshdesk Portal',
+    techs: ['Freshdesk Portal'],
     link: 'https://nemoarms.freshdesk.com/support/home/',
     leftImg: '/projects/nemo1.webp',
     RightImg: '/projects/nemo2.webp',
@@ -132,6 +138,10 @@ export const SKILLS = [
     img: '/tools/next.svg',
   },
   {
+    title: 'Webflow',
+    img: '/tools/webflow.svg',
+  },
+  {
     title: 'Tailwind CSS',
     img: '/tools/tailwind.svg',
   },
@@ -167,12 +177,16 @@ export const OTHER_SKILLS = [
     img: '/tools/shopify.svg',
   },
   {
+    title: 'Zendesk',
+    img: '/tools/zendesk.svg',
+  },
+  {
     title: 'Help Scout',
     img: '/tools/helpscout.svg',
   },
   {
-    title: 'Zendesk',
-    img: '/tools/zendesk.svg',
+    title: 'Freshdesk',
+    img: '/tools/freshdesk.svg',
   },
   {
     title: 'Figma',

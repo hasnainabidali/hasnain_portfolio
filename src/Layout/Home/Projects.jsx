@@ -53,7 +53,7 @@ export const Projects = () => {
   return (
     <div className="project-list pt-24" id="works">
       <h2 className="mb-4 text-center text-3xl font-bold text-primary md:mb-8 md:text-5xl">
-        My Work
+        Featured Work
       </h2>
       <h2 className="text-center text-sm font-bold uppercase tracking-widest opacity-80 md:text-base">
         Recent Projects
@@ -78,8 +78,10 @@ export const Projects = () => {
                 />
               </div>
               <div className="projectWrapper relative z-0 flex h-[300px] w-full max-w-[600px] flex-col items-center justify-center gap-y-[20px] px-[64px] py-10 md:py-0 lg:h-full lg:w-[50vw] lg:gap-y-[120px]">
-                <div className="text-center text-sm uppercase tracking-wide">
-                  {el.tech}
+                <div className="text-center text-sm font-medium uppercase tracking-wide">
+                  {el.techs.map((tech) => (
+                    <div>{tech}</div>
+                  ))}
                 </div>
                 <h2 className="text-center text-3xl leading-[1.25em] md:text-5xl">
                   {el.title}
