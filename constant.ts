@@ -1,5 +1,6 @@
 export const METADATA = {
   title: 'Hasnain Raza - Web Developer',
+  zendesk: 'Hasnain Raza - Zendesk Theme Customization Expert',
   description:
     'I help companies to Transform their Ideas into Exceptional User Experiences.',
   siteUrl: 'https://hasnain-portfolio-iota.vercel.app/',
@@ -8,23 +9,23 @@ export const METADATA = {
 export const MENULINKS = [
   {
     name: 'Home',
-    ref: 'home',
+    ref: '/',
   },
   {
     name: 'Works',
-    ref: 'works',
+    ref: '/#works',
   },
   {
     name: 'Skills',
-    ref: 'skills',
+    ref: '/#skills',
   },
   // {
-  //   name: "Timeline",
-  //   ref: "timeline",
+  //   name: 'Zendesk',
+  //   ref: '/zendesk',
   // },
   {
     name: 'Contact',
-    ref: 'contact',
+    ref: '/#contact',
   },
 ];
 

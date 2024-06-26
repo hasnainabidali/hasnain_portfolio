@@ -30,7 +30,7 @@ export const HomeHero = () => {
 
     titles.forEach((title, index) => {
       const el = title.querySelectorAll('.h_title span span');
-      const delay = index * 0.08;
+      const delay = index * 1;
 
       tl.to(
         el,
@@ -60,7 +60,7 @@ export const HomeHero = () => {
     let tlMaster = gsap.timeline({ repeat: -1, delay: 2 });
     whatIdo.forEach((word) => {
       let tlText = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 4 });
-      tlText.to('#whatIdo .texttt', { duration: 2, text: word });
+      tlText.to('#whatIdo .texttt', { duration: 2, text: word, delay: 0.5 });
       tlMaster.add(tlText);
     });
 
@@ -99,8 +99,8 @@ export const HomeHero = () => {
   }, []);
 
   return (
-    <div className="flex min-h-screen items-center " id="home">
-      <div className="h_container md:px0 container flex flex-col items-center px-4 md:flex-row">
+    <div className="flex items-center min-h-screen " id="home">
+      <div className="container flex flex-col items-center px-4 h_container md:px0 md:flex-row">
         <div className="w-full md:w-1/2">
           <h1 className="h_title relative mb-4 w-full text-2xl font-bold leading-[90%] text-primary md:mb-8 lg:text-5xl">
             <span className="-mb-1.5 -mt-6 inline-block overflow-hidden align-bottom">
@@ -124,12 +124,12 @@ export const HomeHero = () => {
                 className="inline-block min-h-[80px] translate-y-full pb-1.5 pt-6 will-change-transform md:min-h-[90px] lg:min-h-[110px] "
               >
                 <span className="box"></span>
-                <span className="texttt capitalize leading-6"></span>
-                <span className="cursor text-white">|</span>
+                <span className="leading-6 capitalize texttt"></span>
+                <span className="text-white cursor">|</span>
               </span>
             </span>
           </h1>
-          <div className="social-links flex opacity-100">
+          <div className="flex opacity-100 social-links">
             <a href="https://www.linkedin.com/in/hasnain-raza/" target="_blank">
               <div
                 className="social-btn link relative m-[0.35rem] flex h-10 w-10 items-center justify-center overflow-hidden rounded-md bg-white px-2 shadow-md md:m-2 md:h-12 md:w-12 md:px-3"
@@ -275,7 +275,7 @@ export const HomeHero = () => {
             />
           </div>
         </div>
-        <div className="mt-8 w-full md:mt-0 md:w-1/2">
+        <div className="w-full mt-8 md:mt-0 md:w-1/2">
           <div className="text-center">
             <Image
               src={authorPic}

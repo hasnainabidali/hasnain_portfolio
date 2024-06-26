@@ -1,14 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import { Cursor, Layout, ProgressIndicator } from '@/components';
-import { Header } from '@/components';
+import { Header, Footer } from '@/components';
 import {
   HomeHero,
   TextAppear,
   HomeHorizontalSection,
   Projects,
   SkillsSection,
-  Footer,
   HistorySection,
 } from '@/Layout';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -67,7 +66,7 @@ export default function Home() {
         <ProgressIndicator />
         <Header />
         <Cursor isDesktop={true} />
-        <main className="w-auto  md:cursor-none">
+        <main className="w-auto md:cursor-none">
           <section
             className="color-section"
             data-bgcolor="#120e16"
