@@ -11,34 +11,59 @@ export const Header = () => {
   const logoRef = useRef(null);
 
   const onLogoEnter = () => {
-    const currColor = logoRef.current.getAttribute('data-color');
-    const logoSvg = logoRef.current.firstChild.firstChild;
+    // const currColor = logoRef.current.getAttribute('data-color');
+    // const currColor2 = logoRef.current.getAttribute('data-color2');
 
-    const nextColor =
-      currColor === '#a6e2e3'
-        ? '#8566f6'
-        : currColor === '#8566f6'
-        ? '#ed7c50'
-        : '#a6e2e3';
+    const logoSvg = logoRef.current.firstChild.firstChild.children[0];
+    const logoSvg2 = logoRef.current.firstChild.firstChild.children[1];
 
-    logoRef.current.setAttribute('data-color', nextColor);
-    gsap.to(logoSvg, { fill: currColor, duration: 0.2, ease: 'power1.out' });
+    // const nextColor = currColor === '#fdd600' ? '#f5f4f5' : '#fdd600';
+
+    // logoRef.current.setAttribute('data-color', nextColor);
+    // logoRef.current.setAttribute('data-color2', nextColor);
+    // gsap.to(logoRef.current, {
+    //   scale: 1.05,
+    //   duration: 0.2,
+    //   ease: 'power1.out',
+    // });
+    gsap.to(logoSvg, {
+      fill: '#fdd600',
+      x: 5,
+      duration: 0.2,
+      // ease: 'power1.out',
+    });
+    gsap.to(logoSvg2, {
+      fill: '#f5f4f5',
+      x: -5,
+      duration: 0.2,
+      // ease: 'power1.out',
+    });
   };
   const onLogoLeave = () => {
-    const logoSvg = logoRef.current.firstChild.firstChild;
+    const logoSvg = logoRef.current.firstChild.firstChild.children[0];
+    const logoSvg2 = logoRef.current.firstChild.firstChild.children[1];
+    // gsap.to(logoRef.current, { scale: 1, duration: 0.2, ease: 'power1.out' });
+
     gsap.to(logoSvg, {
       fill: '#f5f4f5',
+      x: 0,
       duration: 0.2,
-      ease: 'power1.out',
+      // ease: 'power1.out',
+    });
+    gsap.to(logoSvg2, {
+      fill: '#fdd600',
+      x: 0,
+      duration: 0.2,
+      // ease: 'power1.out',
     });
   };
 
   return (
-    <div className="fixed top-0 left-0 z-10 w-screen transition-all duration-500 ease-out header min-w-screen md:cursor-none">
-      <div className="relative flex items-center justify-center px-4 py-4 transition-all duration-500 ease-out header_container will-change-transform lg:px-7 lg:py-8 ">
+    <div className="header min-w-screen fixed left-0 top-0 z-10 w-screen transition-all duration-500 ease-out md:cursor-none">
+      <div className="header_container relative flex items-center justify-center px-4 py-4 transition-all duration-500 ease-out will-change-transform lg:px-7 lg:py-8 ">
         <div className="relative w-full">
           <div
-            className="absolute left-0 -translate-y-1/2 top-1/2"
+            className="absolute left-0 top-1/2 -translate-y-1/2"
             onClick={() => setmenuVisible(!menuVisible)}
           >
             <MenuButton>Menu</MenuButton>
@@ -46,6 +71,7 @@ export const Header = () => {
           <div
             className="header_logo link pointer-event-auto mx-auto max-w-fit leading-none transition-height [&>a>svg]:h-10 [&>a>svg]:duration-500 [&>a>svg]:ease-out md:[&>a>svg]:h-12 lg:[&>a>svg]:h-16"
             data-color="#a6e2e3"
+            data-color2="#f5f4f5"
             ref={logoRef}
             onMouseEnter={onLogoEnter}
             onMouseLeave={onLogoLeave}
@@ -54,7 +80,7 @@ export const Header = () => {
               <MainLogo />
             </Link>
           </div>
-          <div className="absolute right-0 -translate-y-1/2 top-1/2">
+          <div className="absolute right-0 top-1/2 -translate-y-1/2">
             <MenuButton link="mailto:hasnainrhraza@gmail.com">
               Contact
             </MenuButton>
@@ -66,7 +92,7 @@ export const Header = () => {
             menuVisible &&
           } */}
         <button
-          className={`hamburger fixed left-5 top-10 ${
+          className={`hamburger fixed left-5 top-8 ${
             menuVisible ? 'visible' : 'invisible'
           }`}
           onClick={() => setmenuVisible(!menuVisible)}

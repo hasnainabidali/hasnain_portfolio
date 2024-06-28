@@ -7,20 +7,16 @@ import {
   useLayoutEffect,
   useRef,
 } from 'react';
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Lenis from '@studio-freight/lenis';
 import debounce from '@/util/debounce';
 
-
 gsap.registerPlugin(ScrollTrigger);
-
 
 const PageContext = createContext({
   lenis: null,
 });
-
-
 
 export const PageProvider = ({ children }) => {
   const [lenis, setLenis] = useState();
@@ -53,7 +49,6 @@ export const PageProvider = ({ children }) => {
 
     lenis.on('scroll', ({ scroll }) => {
       debounce(() => (lastHeight = scroll))();
-
 
       if (lastHeight < scroll && scroll > 160 && !hideNav) {
         document.body.classList.add('hide_header');

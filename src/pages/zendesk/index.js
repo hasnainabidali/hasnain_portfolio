@@ -96,12 +96,12 @@ export default function Zendesk() {
         <ProgressIndicator />
         <Header />
         <Cursor isDesktop={true} />
-        <main className="w-full h-full md:cursor-none">
-          <section className="w-full h-screen hero pinned">
-            <div className="absolute w-full text-center -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 text-8xl">
+        <main className="h-full w-full md:cursor-none">
+          <section className="hero pinned h-screen w-full">
+            <div className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 text-center text-8xl">
               {/* Zendesk <span className="text-primary">Theme</span> <br />
               Customization Expert */}
-              <h1 className="h_title relative mb-2 w-full text-2xl font-normal leading-[90%] md:mb-2 lg:text-7xl">
+              <h1 className="h_title relative mb-2 w-full text-2xl font-medium leading-[90%] md:mb-2 lg:text-8xl">
                 <span className="h_title_span -mb-1.5 -mt-6 block overflow-hidden align-bottom">
                   <span className=" inline-block  translate-y-full pb-1.5 pt-6 will-change-transform ">
                     Zendesk <span className="text-primary">Theme</span>
@@ -116,7 +116,7 @@ export default function Zendesk() {
               {/* <h1 className="h_title relative mb-0 w-full text-2xl font-bold leading-[90%] md:mb-0 lg:text-6xl">
               </h1> */}
             </div>
-            <div className="absolute -translate-x-1/2 bottom-16 left-1/2">
+            <div className="absolute bottom-16 left-1/2 -translate-x-1/2">
               <div className="scroller-rotate hidden h-[105px] w-[105px] animate-spin-slow opacity-0 md:block">
                 <Image
                   src={scrollerImg}
@@ -128,47 +128,47 @@ export default function Zendesk() {
               </div>
             </div>
           </section>
-          <section className="w-full h-screen card pinned">
+          <section className="card pinned h-screen w-full">
             <div className="img absolute bottom-0 left-1/2 h-auto w-[60%] -translate-x-1/2">
               <img
                 src="/projects/wirtscha1.webp"
-                className="object-cover object-top w-full h-full"
+                className="h-full w-full object-cover object-top"
                 alt=""
               />
             </div>
           </section>
-          <section className="w-full h-screen card pinned">
+          <section className="card pinned h-screen w-full">
             <div className="img absolute bottom-0 left-1/2 h-auto w-[60%] -translate-x-1/2">
               <img
                 src="/projects/nftavatar1.webp"
-                className="object-cover object-top w-full h-full"
+                className="h-full w-full object-cover object-top"
                 alt=""
               />
             </div>
           </section>
-          <section className="w-full h-screen card pinned">
+          <section className="card pinned h-screen w-full">
             <div className="img absolute bottom-0 left-1/2 h-auto w-[60%] -translate-x-1/2">
               <img
                 src="/projects/mawada1.webp"
-                className="object-cover object-top w-full h-full"
+                className="h-full w-full object-cover object-top"
                 alt=""
               />
             </div>
           </section>
-          <section className="w-full h-screen card pinned">
+          <section className="card pinned h-screen w-full">
             <div className="img absolute bottom-0 left-1/2 h-auto w-[60%] -translate-x-1/2">
               <img
                 src="/projects/mats1.webp"
-                className="object-cover object-top w-full h-full"
+                className="h-full w-full object-cover object-top"
                 alt=""
               />
             </div>
           </section>
-          <section className="relative w-full h-screen card scroll">
+          <section className="card scroll relative h-screen w-full">
             <div className="img absolute bottom-0 left-1/2 h-auto w-[60%] -translate-x-1/2">
               <img
                 src="/projects/shown1.webp"
-                className="object-cover object-top w-full h-full"
+                className="h-full w-full object-cover object-top"
                 alt=""
               />
             </div>

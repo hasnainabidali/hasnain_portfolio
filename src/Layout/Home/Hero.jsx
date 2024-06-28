@@ -18,6 +18,8 @@ export const HomeHero = () => {
   const heroInfiniteRef = useRef(null);
   const likeCrazyLottieRef = useRef(null);
 
+  const authorImage = useRef(null);
+
   const whatIdo = [
     'A pragmatic Front End Developer',
     'I transform ideas into outstanding user experiences',
@@ -32,27 +34,45 @@ export const HomeHero = () => {
       const el = title.querySelectorAll('.h_title span span');
       const delay = index * 1;
 
-      tl.to(
-        el,
-        {
-          y: 0,
-          duration: 1.5,
-          ease: 'cubic-text',
-        },
-        delay
-      );
+      tl.to(el, {
+        y: 0,
+        duration: 0.75,
+        ease: 'cubic-text',
+      });
     });
 
-    tl.add(() => likeCrazyLottieRef?.current?.play(), 0.2);
+    tl.to(authorImage.current, { opacity: 1 });
 
-    gsap.to('#whatIdo .cursor', {
+    // tl.add(() => likeCrazyLottieRef?.current?.play(), 0.2);
+
+    // tl.fromTo(
+    //   '.social-links',
+    //   { x: 40, opacity: 0 },
+    //   {
+    //     x: 0,
+    //     opacity: 1,
+    //     ease: 'power2.inOut',
+    //     duration: 0.75,
+    //   }
+    // );
+
+    tl.fromTo(
+      '.social-btn',
+      { x: 40, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        stagger: 0.1,
+        duration: 0.25,
+      }
+    );
+
+    tl.to('#whatIdo .cursor', {
       opacity: 0,
       ease: 'power2.inOut',
       repeat: -1,
       duration: 0.75,
     });
-
-    tl.to('.social-links', { opacity: 1, ease: 'power2.inOut' });
 
     // tl.to('.scroller-rotate', {rotation:"360", ease:Linear.easeNone, duration: 10,  repeat:-1});
     tl.to('.scroller-rotate', { opacity: 1, ease: 'power2.inOut' });
@@ -99,9 +119,9 @@ export const HomeHero = () => {
   }, []);
 
   return (
-    <div className="flex items-center min-h-screen " id="home">
-      <div className="container flex flex-col items-center px-4 h_container md:px0 md:flex-row">
-        <div className="w-full md:w-1/2">
+    <div className="flex min-h-screen items-center " id="home">
+      <div className="h_container md:px0 container flex flex-col items-center px-4 md:flex-row">
+        <div className="w-full text-center md:w-1/2 md:text-start">
           <h1 className="h_title relative mb-4 w-full text-2xl font-bold leading-[90%] text-primary md:mb-8 lg:text-5xl">
             <span className="-mb-1.5 -mt-6 inline-block overflow-hidden align-bottom">
               <span className=" inline-block  translate-y-full pb-1.5 pt-6 will-change-transform ">
@@ -112,7 +132,7 @@ export const HomeHero = () => {
           <h1 className="h_title  relative mb-4 w-full text-5xl font-bold leading-[100%] lg:text-[4vw]">
             <span className="-mb-1.5 -mt-6 inline-block overflow-hidden align-bottom">
               <span className="inline-block  translate-y-full pb-1.5 pt-6 will-change-transform">
-                I Am Hasnain.
+                I am Hasnain.
               </span>
             </span>
           </h1>
@@ -124,15 +144,15 @@ export const HomeHero = () => {
                 className="inline-block min-h-[80px] translate-y-full pb-1.5 pt-6 will-change-transform md:min-h-[90px] lg:min-h-[110px] "
               >
                 <span className="box"></span>
-                <span className="leading-6 capitalize texttt"></span>
-                <span className="text-white cursor">|</span>
+                <span className="texttt capitalize leading-6"></span>
+                <span className="cursor text-white">|</span>
               </span>
             </span>
           </h1>
-          <div className="flex opacity-100 social-links">
+          <div className="social-links flex justify-center md:justify-start">
             <a href="https://www.linkedin.com/in/hasnain-raza/" target="_blank">
               <div
-                className="social-btn link relative m-[0.35rem] flex h-10 w-10 items-center justify-center overflow-hidden rounded-md bg-white px-2 shadow-md md:m-2 md:h-12 md:w-12 md:px-3"
+                className="social-btn link relative m-[0.35rem] flex h-10 w-10 items-center justify-center overflow-hidden rounded-md bg-white px-2 opacity-0 opacity-0 shadow-md md:m-2 md:ml-0 md:h-12 md:w-12 md:px-3"
                 id="linkedin"
               >
                 <svg
@@ -167,7 +187,7 @@ export const HomeHero = () => {
             </a>
             <a href="https://www.facebook.com/hasnainreeza" target="_blank">
               <div
-                className="social-btn link relative m-[0.35rem] flex h-10 w-10 items-center justify-center overflow-hidden rounded-md bg-white px-2 shadow-md md:m-2 md:h-12 md:w-12 md:px-3"
+                className="social-btn link relative m-[0.35rem] flex h-10 w-10 items-center justify-center overflow-hidden rounded-md bg-white px-2 opacity-0 shadow-md md:m-2 md:h-12 md:w-12 md:px-3"
                 id="facebook"
               >
                 <svg
@@ -227,7 +247,7 @@ export const HomeHero = () => {
               target="_blank"
             >
               <div
-                className="social-btn link relative m-[0.35rem] flex h-10 w-10 items-center justify-center overflow-hidden rounded-md bg-white px-2 shadow-md md:m-2 md:h-12 md:w-12 md:px-3"
+                className="social-btn link relative m-[0.35rem] flex h-10 w-10 items-center justify-center overflow-hidden rounded-md bg-white px-2 opacity-0 shadow-md md:m-2 md:h-12 md:w-12 md:px-3"
                 id="fiverr"
               >
                 <svg
@@ -245,7 +265,7 @@ export const HomeHero = () => {
             </a>
             <a href="https://www.fiverr.com/hasnain_reza" target="_blank">
               <div
-                className="social-btn link relative m-[0.35rem] flex h-10 w-10 items-center justify-center overflow-hidden rounded-md bg-white px-2 shadow-md md:m-2 md:h-12 md:w-12 md:px-3"
+                className="social-btn link relative m-[0.35rem] flex h-10 w-10 items-center justify-center overflow-hidden rounded-md bg-white px-2 opacity-0 shadow-md md:m-2 md:h-12 md:w-12 md:px-3"
                 id="upwork"
               >
                 <svg
@@ -275,13 +295,13 @@ export const HomeHero = () => {
             />
           </div>
         </div>
-        <div className="w-full mt-8 md:mt-0 md:w-1/2">
-          <div className="text-center">
+        <div className="mt-14 w-full md:mt-0 md:w-1/2">
+          <div ref={authorImage} className="px-4 text-center opacity-0 md:px-0">
             <Image
               src={authorPic}
               className="mx-auto rounded-full"
-              width={500}
-              height={500}
+              width={450}
+              height={450}
               alt="Picture of the author"
             />
             {/* <div className="">
