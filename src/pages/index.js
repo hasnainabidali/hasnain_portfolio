@@ -92,13 +92,13 @@ export default function Home() {
             <Projects />
           </section>
           {/* <section
-              className="color-section"
-              data-bgcolor="#120e16"
-              data-endBgcolor="#120e16"
-              data-textcolor="#f5f4f5"
-            >
-              <HistorySection />
-            </section> */}
+            className="color-section"
+            data-bgcolor="#120e16"
+            data-endBgcolor="#120e16"
+            data-textcolor="#f5f4f5"
+          >
+            <HomeHorizontalSection />
+          </section> */}
           <section
             className="color-section"
             data-bgcolor="#120e16"
@@ -108,14 +108,6 @@ export default function Home() {
             <SkillsSection />
           </section>
 
-          {/* <section
-              className="color-section"
-              data-bgcolor="#f5f4f5"
-              data-endBgcolor="#f5f4f5"
-              data-textcolor="#120e16"
-            >
-              <HomeHorizontalSection />
-            </section> */}
           <section
             className="color-section"
             data-bgcolor="#120e16"
