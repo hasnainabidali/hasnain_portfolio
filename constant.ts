@@ -1,9 +1,10 @@
 export const METADATA = {
-  title: 'Hasnain Raza - Web Developer',
+  title: 'Hasnain Raza - Frontend Developer',
   zendesk: 'Hasnain Raza - Zendesk Theme Customization Expert',
   description:
     'I help companies to Transform their Ideas into Exceptional User Experiences.',
-  siteUrl: 'https://hasnain-portfolio-iota.vercel.app/',
+  image: 'https://hasnainraza.vercel.app/hasnain-preview.jpg',
+  siteUrl: 'https://hasnainraza.vercel.app/',
 };
 
 export const MENULINKS = [
