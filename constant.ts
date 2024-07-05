@@ -3,7 +3,7 @@ export const METADATA = {
   zendesk: 'Hasnain Raza - Zendesk Theme Customization Expert',
   description:
     'I help companies to Transform their Ideas into Exceptional User Experiences.',
-  image: 'https://hasnainraza.vercel.app/hasnain-og-preview.jpg',
+  image: 'https://hasnainraza.vercel.app/hasnain-preview.jpg',
   siteUrl: 'https://hasnainraza.vercel.app/',
 };
 
