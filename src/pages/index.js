@@ -67,6 +67,8 @@ export default function Home() {
         <Header />
         <Cursor isDesktop={true} />
         <main className="w-auto md:cursor-none">
+          <div class="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:96px_96px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
+          {/* <div class="absolute inset-0 h-full w-full bg-[radial-gradient(#80808012_1px,transparent_1px)] [background-size:90px_90px]"></div> */}
           <section
             className="color-section"
             data-bgcolor="#120e16"
@@ -91,14 +93,14 @@ export default function Home() {
           >
             <Projects />
           </section>
-          {/* <section
+          <section
             className="color-section"
             data-bgcolor="#120e16"
             data-endBgcolor="#120e16"
             data-textcolor="#f5f4f5"
           >
             <HomeHorizontalSection />
-          </section> */}
+          </section>
           <section
             className="color-section"
             data-bgcolor="#120e16"

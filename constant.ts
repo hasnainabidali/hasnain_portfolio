@@ -13,8 +13,12 @@ export const MENULINKS = [
     ref: '/',
   },
   {
-    name: 'Works',
+    name: 'Projects',
     ref: '/#works',
+  },
+  {
+    name: 'Testimonials',
+    ref: '/#testimonials',
   },
   {
     name: 'Skills',
@@ -86,17 +90,17 @@ export const PROJECTS = [
     endbgcolor: '#120e16',
     textColor: '#f5f4f5',
   },
-  {
-    title: 'Nemo Arms',
-    tech: 'Freshdesk Portal',
-    techs: ['Freshdesk Portal'],
-    link: 'https://nemoarms.freshdesk.com/support/home/',
-    leftImg: '/projects/nemo1.webp',
-    RightImg: '/projects/nemo2.webp',
-    bgColor: '#120e16',
-    endbgcolor: '#120e16',
-    textColor: '#f5f4f5',
-  },
+  // {
+  //   title: 'Nemo Arms',
+  //   tech: 'Freshdesk Portal',
+  //   techs: ['Freshdesk Portal'],
+  //   link: 'https://nemoarms.freshdesk.com/support/home/',
+  //   leftImg: '/projects/nemo1.webp',
+  //   RightImg: '/projects/nemo2.webp',
+  //   bgColor: '#120e16',
+  //   endbgcolor: '#120e16',
+  //   textColor: '#f5f4f5',
+  // },
 ];
 
 // export const MORE_PROJECTS = [
