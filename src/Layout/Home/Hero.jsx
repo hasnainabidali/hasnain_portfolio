@@ -21,7 +21,7 @@ export const HomeHero = () => {
   const authorImage = useRef(null);
 
   const whatIdo = [
-    'A pragmatic Front End Developer',
+    'A pragmatic Full Stack Developer',
     'I transform ideas into outstanding user experiences',
     'I Am Passionate Freelancer',
   ];

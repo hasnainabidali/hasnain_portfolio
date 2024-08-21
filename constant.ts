@@ -1,5 +1,5 @@
 export const METADATA = {
-  title: 'Hasnain Raza - Frontend Developer',
+  title: 'Hasnain Raza - Full Stack Developer',
   zendesk: 'Hasnain Raza - Zendesk Theme Customization Expert',
   description:
     'I help companies to Transform their Ideas into Exceptional User Experiences.',
@@ -144,12 +144,16 @@ export const SKILLS = [
     img: '/tools/next.svg',
   },
   {
-    title: 'Webflow',
-    img: '/tools/webflow.svg',
-  },
-  {
     title: 'Tailwind CSS',
     img: '/tools/tailwind.svg',
+  },
+  {
+    title: 'Alpine JS',
+    img: '/tools/alpine.svg',
+  },
+  {
+    title: 'Livewire',
+    img: '/tools/livewire.svg',
   },
   {
     title: 'Bootstrap',
@@ -181,6 +185,14 @@ export const OTHER_SKILLS = [
   {
     title: 'Shopify',
     img: '/tools/shopify.svg',
+  },
+  {
+    title: 'Laravel',
+    img: '/tools/laravel.svg',
+  },
+  {
+    title: 'Webflow',
+    img: '/tools/webflow.svg',
   },
   {
     title: 'Zendesk',
