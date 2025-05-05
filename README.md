@@ -2,7 +2,7 @@
 
 This is my **personal portfolio website** — designed and developed from scratch using modern frontend technologies. It showcases my work, experience, and passion for building performant, interactive websites using cutting-edge tools like **React**, **Next.js**, **Tailwind CSS**, **GSAP**, and **Lenis**.
 
-![screenshot](./screenshot.png) <!-- Replace with your actual screenshot path -->
+![screenshot](/screenshot.png) <!-- Replace with your actual screenshot path -->
 
 ## 🛠 TECH STACK
 
