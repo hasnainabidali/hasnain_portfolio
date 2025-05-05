@@ -1,12 +1,16 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import { Cursor, Layout, ProgressIndicator } from '@/components';
-import scrollerImg from '../../../public/scrollerdown.svg';
-import { Header, Footer } from '@/components';
-// import { Footer } from '@/Layout';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import {
+  Header,
+  Footer,
+  Cursor,
+  Layout,
+  ProgressIndicator,
+} from '@/components';
+import scrollerImg from '../../../public/scrollerdown.svg';
 import { METADATA } from 'constant';
 
 export default function Zendesk() {

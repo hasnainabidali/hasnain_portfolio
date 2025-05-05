@@ -204,9 +204,8 @@ export const HomeHero = () => {
                     stroke-linejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
-                    {' '}
-                    <title>facebook [#176]</title>{' '}
-                    <desc>Created with Sketch.</desc> <defs> </defs>{' '}
+                    <title>facebook [#176]</title>
+                    <desc>Created with Sketch.</desc> <defs> </defs>
                     <g
                       id="Page-1"
                       stroke="none"
@@ -214,27 +213,22 @@ export const HomeHero = () => {
                       fill="none"
                       fill-rule="evenodd"
                     >
-                      {' '}
                       <g
                         id="Dribbble-Light-Preview"
                         transform="translate(-385.000000, -7399.000000)"
                         fill="#4460A0"
                       >
-                        {' '}
                         <g
                           id="icons"
                           transform="translate(56.000000, 160.000000)"
                         >
-                          {' '}
                           <path
                             d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
                             id="facebook-[#176]"
-                          >
-                            {' '}
-                          </path>{' '}
-                        </g>{' '}
-                      </g>{' '}
-                    </g>{' '}
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
                   </g>
                 </svg>
                 <span className="left-[40px] w-0 font-bold text-black opacity-0">

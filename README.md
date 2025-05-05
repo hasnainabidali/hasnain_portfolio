@@ -1,10 +1,45 @@
-## FOLIO
+# PORTFOLIO
 
-[Live Demo](https://hasnain-portfolio-iota.vercel.app/)
+This is my **personal portfolio website** — designed and developed from scratch using modern frontend technologies. It showcases my work, experience, and passion for building performant, interactive websites using cutting-edge tools like **React**, **Next.js**, **Tailwind CSS**, **GSAP**, and **Lenis**.
 
-## How did I create this?
+![screenshot](./screenshot.png) <!-- Replace with your actual screenshot path -->
 
-1. UI/UX is brainstormed using inspiration from winning portfolios from awwwards. High-fidelity mockup aggregating the ideas using Figma.
-2. This project uses React for simplicity to break down sections as components. Also uses next.js to achieve SSG. SVGs have been animated using CSS.
-3. Section scrolling and reveal animations uses GSAP. Card interactions use Tilt js. The timeline section was built using JS/SVGs and animated via GSAP.
-4. Optimised animations, layer management, repaints, and re-layouts using Chrome dev tools.
+## 🛠 TECH STACK
+
+- **React**
+- **Next.js**
+- **Tailwind CSS**
+- **GSAP (GreenSock Animation Platform)**
+- **Lenis (Smooth Scroll Library)**
+- **HTML5 & CSS3**
+
+## ✨ FEATURES
+
+- 🌀 Smooth scrolling using **Lenis**
+- 🎞️ Scroll-triggered animations with **GSAP**
+- 🎨 **Animated SVGs** for engaging visual effects
+- 💡 Responsive design optimized for all devices
+- 🔍 SEO-friendly setup with Next.js
+- ⚡ Fast, lightweight, and fully custom
+
+## 🌐 DEMO
+
+Live Preview: https://hasnainraza.vercel.app
+
+## 📦 INSTALLATION
+
+```bash
+# Clone the repository
+git clone https://github.com/hasnainabidali/hasnain_portfolio.git
+
+# Navigate into the project folder
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+# or
+yarn dev
+```

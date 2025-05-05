@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { PROJECTS } from 'constant';
-import wircha from '../../images/wirtscha11.png';
 import gsap from 'gsap';
 import { MenuButton } from '@/components';
 
