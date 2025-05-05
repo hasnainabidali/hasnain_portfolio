@@ -35,10 +35,10 @@ export const Footer = () => {
 
   return (
     <div
-      className="container px-2 pt-24 pb-8 md:px-4 md:pb-10 lg:px-0"
+      className="container px-2 pb-8 pt-24 md:px-4 md:pb-10 lg:px-0"
       id="contact"
     >
-      <h2 className="mb-8 text-3xl font-bold text-center text-primary md:text-4xl">
+      <h2 className="mb-8 text-center text-3xl font-bold text-primary md:text-4xl">
         Let's Chat
       </h2>
       {/* <h2 className="text-sm text-center uppercase opacity-80">Get in Touch</h2> */}
@@ -56,9 +56,9 @@ export const Footer = () => {
           </span>
         </a>
       </div>
-      <div className="relative flex flex-col items-center justify-center gap-5 mt-12 md:mt-16 md:flex-row md:gap-0">
-        <h2 className="left-0 order-2 text-xs text-center uppercase md:absolute">
-          © 2024 Hasnain Raza
+      <div className="relative mt-12 flex flex-col items-center justify-center gap-5 md:mt-16 md:flex-row md:gap-0">
+        <h2 className="left-0 order-2 text-center text-xs uppercase md:absolute">
+          © 2025 Hasnain Raza
         </h2>
         <MenuButton
           classes="link text-xs md:text-xs  border rounded-full w-[80px] text-center"
@@ -66,7 +66,7 @@ export const Footer = () => {
         >
           Linkedin
         </MenuButton>
-        <h2 className="right-0 text-xs text-center uppercase md:absolute">
+        <h2 className="right-0 text-center text-xs uppercase md:absolute">
           design & dev ✦ Hasnain Raza
         </h2>
       </div>
